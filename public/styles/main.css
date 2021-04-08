@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,100&family=Ramabhadra&display=swap');
+
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+
+    --light-color: white;
+    --body-color: #CFCED7;
+    --heading-color: white;
+    --contrast-color: black;
+}
+
+h1 {
+    font-family: 'Ramabhadra', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(404deg, rgba(232, 232, 232, 0.03) 0%, rgba(232, 232, 232, 0.03) 10%,rgba(14, 14, 14, 0.03) 10%, rgba(14, 14, 14, 0.03) 66%,rgba(232, 232, 232, 0.03) 66%, rgba(232, 232, 232, 0.03) 72%,rgba(44, 44, 44, 0.03) 72%, rgba(44, 44, 44, 0.03) 81%,rgba(51, 51, 51, 0.03) 81%, rgba(51, 51, 51, 0.03) 100%),linear-gradient(397deg, rgba(155, 155, 155, 0.03) 0%, rgba(155, 155, 155, 0.03) 23%,rgba(30, 30, 30, 0.03) 23%, rgba(30, 30, 30, 0.03) 63%,rgba(124, 124, 124, 0.03) 63%, rgba(124, 124, 124, 0.03) 73%,rgba(195, 195, 195, 0.03) 73%, rgba(195, 195, 195, 0.03) 84%,rgba(187, 187, 187, 0.03) 84%, rgba(187, 187, 187, 0.03) 100%),linear-gradient(367deg, rgba(254, 254, 254, 0.03) 0%, rgba(254, 254, 254, 0.03) 27%,rgba(180, 180, 180, 0.03) 27%, rgba(180, 180, 180, 0.03) 33%,rgba(167, 167, 167, 0.03) 33%, rgba(167, 167, 167, 0.03) 34%,rgba(68, 68, 68, 0.03) 34%, rgba(68, 68, 68, 0.03) 63%,rgba(171, 171, 171, 0.03) 63%, rgba(171, 171, 171, 0.03) 100%),linear-gradient(397deg, rgba(71, 71, 71, 0.03) 0%, rgba(71, 71, 71, 0.03) 3%,rgba(97, 97, 97, 0.03) 3%, rgba(97, 97, 97, 0.03) 40%,rgba(40, 40, 40, 0.03) 40%, rgba(40, 40, 40, 0.03) 55%,rgba(5, 5, 5, 0.03) 55%, rgba(5, 5, 5, 0.03) 73%,rgba(242, 242, 242, 0.03) 73%, rgba(242, 242, 242, 0.03) 100%),linear-gradient(559deg, rgba(70, 70, 70, 0.03) 0%, rgba(70, 70, 70, 0.03) 11%,rgba(178, 178, 178, 0.03) 11%, rgba(178, 178, 178, 0.03) 23%,rgba(28,28,28, 0) 23%, rgba(28,28,28, 0) 72%,rgba(152, 152, 152, 0.03) 72%, rgba(152, 152, 152, 0.03) 86%,rgba(0,0,0, 0.42) 86%, rgba(0,0,0, 0.42) 100%),linear-gradient(378deg, rgb(25,25,29),rgb(1, 1, 1));
+    color: var(--body-color);
+}
+
+body {
+    display: grid;
+    grid-template-areas:    "head nav"
+                            "main main"
+                            "foot foot";
+    grid-template-columns: 20em 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+@media screen and (max-width: 25em) {
+    body {
+        grid-template-areas:    "head head"
+                                "nav nav"
+                                "main main"
+                                "foot foot";            
+        grid-template-columns: 20em 1fr;
+        grid-template-rows: auto auto 1fr auto;
+    }
+}
+
+body > * {
+    padding-left: var(--horizontal-space);
+    padding-right: var(--horizontal-space);
+}
+
+body > header {
+    grid-area: head;
+}
+
+body > nav {
+    text-align: right;
+    font-size: 1.2em;
+    padding-right: 3rem;
+    grid-area: nav;
+}
+
+body > nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body > nav ul li {
+    display: inline;
+    padding-right: 1.5rem;
+}
+
+body > main {
+    grid-area: main;
+}
+
+body > footer {
+    grid-area: foot;
+}
+
+header, footer {
+    padding-top: var(--vertical-space);
+    padding-bottom: var(--horizontal-space);
+}
+
+header h1, footer h1 {
+    margin: 0;
+}
+
+body#portfolio ul#portfolioitems {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 25em) {
+    body#portfolio ul#portfolioitems li {
+        flex-basis: 45%;
+        padding-right: 5%;
+    }
+}
+
+body#about img {
+    height: 18em;
+}
+
+body#portfolio ul#portfolioitems li img {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    line-height: 1em;
+}
+
+p {
+    max-width: 50em;
+}
+
+body#resume > main h1 {
+    line-height: 0;
+    padding-top: .5em;
+}
+
+#heylisten {
+    font-weight: 100;
+    font-style: italic;
+    font-size: .8em;
+}
+
+span.date {
+    padding-top: 0;
+    font-weight: 200;
+}
