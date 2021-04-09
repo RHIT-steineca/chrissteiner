@@ -237,17 +237,17 @@ span.date {
     font-weight: 200;
 }
 
-/* Courtesy of https://stackoverflow.com/a/11601947 */
+/* Courtesy of https://stackoverflow.com/a/11601947
 
 img {
     filter: url(filters.svg#grayscale);
     /* Firefox 3.5+ */
-    filter: gray;
+    /* filter: gray; */
     /* IE6-9 */
-    -webkit-filter: grayscale(1);
+    /* -webkit-filter: grayscale(1); */
     /* Google Chrome & Safari 6+ */
-  }
-img:hover {
-    filter: none;
-    -webkit-filter: none;
-  }
+  /* } */
+/* img:hover { */
+    /* filter: none; */
+    /* -webkit-filter: none; */
+  /* } */
