@@ -186,8 +186,28 @@ body ul#portfolioitems {
     }
 }
 
-body ul#portfolioitems li img{
+body ul#portfolioitems li p {
+    margin-left: 10%;
+    margin-right: 10%;
     max-width: 100%;
+}
+
+body ul#portfolioitems li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 20vw;
+    border-radius: 20px;
+    border-color: #666666;
+    border-style: solid;
+}
+
+body ul#portfolioitems li img:hover {
+    object-fit: cover;
+    max-width: 100%;
+    height: 20vw;
+    border-radius: 20px;
+    border-color: var(--contrast-color);
+    border-style: solid;
 }
 
 h1, h2, h3 {
