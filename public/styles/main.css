@@ -58,7 +58,7 @@ body {
     grid-template-rows: 5.5em 1fr auto;
 }
 
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 29.9999em) {
     body {
         grid-template-areas:    "nav nav"
                                 "pic pic"
@@ -186,7 +186,7 @@ body ul#portfolioitems {
     text-align: center;
 }
 
-@media screen and (min-width: 25em) {
+@media screen and (min-width: 29.9999em) {
     body ul#portfolioitems li {
         flex-basis: 45%;
         margin: 0 2.5%;
