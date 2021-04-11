@@ -58,7 +58,7 @@ body {
     grid-template-rows: 5.5em 1fr auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 25em) {
     body {
         grid-template-areas:    "nav nav"
                                 "pic pic"
@@ -114,16 +114,26 @@ body > nav ul {
     padding-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+body > nav ul li {
+    display: inline;
+    padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
     body > nav {
         text-align: center;
         font-size: 1em;
     }
-}
-
-body > nav ul li {
-    display: inline;
-    padding-right: 1.5rem;
+    body > nav ul li.navbutton a:hover {
+        outline-style: none;
+    }
+    body > nav ul li {
+        display: inline;
+        padding-right: 1.5rem;
+    }
+    body > nav ul li#name {
+        display: block;
+    }
 }
 
 body > nav ul li#name {
@@ -186,11 +196,10 @@ body ul#portfolioitems {
     text-align: center;
 }
 
-@media screen and (min-width: 29.9999em) {
-    body ul#portfolioitems li {
-        flex-basis: 45%;
-        margin: 0 2.5%;
-    }
+body ul#portfolioitems li {
+    flex-basis: 45%;
+    margin: 0 2.5%;
+    justify-content: center;
 }
 
 body ul#portfolioitems li p {
@@ -215,6 +224,22 @@ body ul#portfolioitems li img:hover {
     border-radius: 20px;
     border-color: var(--contrast-color);
     border-style: solid;
+}
+
+@media screen and (max-width: 600px) {
+    body ul#portfolioitems li {
+        flex-basis: 100%;
+        margin: 0 2.5%;
+        justify-content: center;
+    }
+    body ul#portfolioitems li img {
+        object-fit: cover;
+        max-height: 100%;
+        width: 50vw;
+        border-radius: 20px;
+        border-color: #666666;
+        border-style: solid;
+    }
 }
 
 h1, h2, h3 {
