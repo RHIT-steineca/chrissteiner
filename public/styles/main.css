@@ -132,8 +132,8 @@ body > nav > ul > li {
         margin-bottom: 10px;
     }
     body > nav > ul > li:nth-child(2):before {
-        content:"\A";
-        white-space:pre;
+        content: "\A";
+        white-space: normal;
     }
     body > nav > ul > li.navbutton a:hover {
         outline-style: none;
