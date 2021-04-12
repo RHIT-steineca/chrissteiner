@@ -107,34 +107,54 @@ body > nav {
     width: 100%;
 }
 
-body > nav ul {
+body > nav > ul {
     list-style-type: none;
     padding: 0;
     padding-right: 3em;
     padding-top: 10px;
 }
 
-body > nav ul li {
+body > nav > ul > li {
     display: inline;
+}
+
+body > nav > ul > li > ul {
+    list-style-type: none;
+}
+
+body > nav > ul > li > ul > li {
     padding-right: 1.5rem;
+    display: inline;
 }
 
 @media screen and (max-width: 600px) {
     body > nav {
         text-align: center;
         font-size: 1em;
+        padding-right: 5rem;
     }
-    body > nav ul li.navbutton a:hover {
+    body > nav > ul {
+        width: 80%;
+    }
+    body > nav > ul > li > ul {
+        padding-inline-start: 0;
+    }
+    body > nav > ul > li > ul > li {
+        display: inline;
+        padding-inline-start: 0;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        float: right;
+        margin-bottom: 10px;
+    }
+    body > nav > ul > li > ul > li.navbutton a:hover {
         outline-style: none;
     }
-    body > nav ul li {
-        display: inline;
-        padding-right: 1.5rem;
-    }
     body > nav ul li#name {
-        display: block;
-        font-size: 2.5em;
-        padding-left: 8vw;
+        font-family: 'Ramabhadra', sans-serif;
+        font-weight: bold;
+        font-size: 3em;
+        padding-bottom: .75em;
     }
 }
 
