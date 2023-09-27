@@ -57,10 +57,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("mainnav").style.fontSize = "2em";
-    document.getElementById("mainnav").style.padding = ".75em 0";
+    document.getElementById("mainnav").style.padding = ".25em 0";
   } else {
     document.getElementById("mainnav").style.fontSize = "4em";
-    document.getElementById("mainnav").style.padding = ".75em 0";
+    document.getElementById("mainnav").style.padding = ".25em 0";
   }
 }
 

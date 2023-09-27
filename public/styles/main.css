@@ -130,6 +130,8 @@ body > nav {
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
+    padding-left: 0;
+    margin: auto;
 }
 
 #mainnav {
@@ -137,12 +139,15 @@ body > nav {
     font-family: 'Ramabhadra', sans-serif;
     font-weight: bold;
     font-size: 4em;
-    padding: .75em 0;
+    padding: .25em 0;
+    line-height: 1;
     transition: 0.15s;
+    margin: auto;
 }
 #subnav {
     padding: 0 5rem;
     align-self: center;
+    margin: auto;
 }
 #subnav > span {
     padding: 0 .5em;
